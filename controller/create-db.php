@@ -8,11 +8,11 @@ require_once("/../model/database.php");
 
 	//if/else statemant to check if we have a connection error
 	if($connection->connect_error){
-		die("Error: " . $connection->connect_error);
+		die("<p>Error: " . $connection->connect_error . "</p>");
 	}
 
 	else{
-		echo "Success: " . $connection->host_info;
+		echo "<p>Success: " . $connection->host_info . "</p>";
 	}
 
 	//checks if slect_db exsits
@@ -23,12 +23,12 @@ require_once("/../model/database.php");
 		$query = $connection->query("CREATE DATABASE $database");
 
 		if($query){
-			echo " Successfully created database: " . $database;
+			echo "<p>Successfully created database: " . $database . "</p>";
 
 		}
 	}
 	else{
-		echo "Database has already exsits";
+		echo "<p> Database has already exsits </p>";
 	}
 
 	//Creates datatable for posts that have a unique id. Ouur post are text and none of them can be null.
