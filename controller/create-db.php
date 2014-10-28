@@ -33,8 +33,10 @@ require_once("/../model/database.php");
 
 	//Creates datatable for posts that have a unique id. Ouur post are text and none of them can be null.
 	$query = $connection->query("CREATE TABLE posts ("
-		. "id int (11) NOT NULL AUTO_INCREMENT," . "title varchar(255)
-		NOT NULL," . "post text NOT NULL," . "PRIMARY KEY (id)");
+		. "id int (11) NOT NULL AUTO_INCREMENT," 
+		. "title varchar(255) NOT NULL," 
+		. "post text NOT NULL," 
+		. "PRIMARY KEY (id)");
 
 	// closes $connection
 	$connection->close();
