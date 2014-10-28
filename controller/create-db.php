@@ -31,8 +31,8 @@ require_once("/../model/database.php");
 		echo "Database has already exsits";
 	}
 
-	$query = $connection->query("CREATE TABLE posts ("
-		. "id ");
+	//$query = $connection->query("CREATE TABLE posts ("
+		//. "id ");
 
 	// closes $connection
 	$connection->close();
