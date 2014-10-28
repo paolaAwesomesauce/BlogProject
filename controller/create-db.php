@@ -32,7 +32,8 @@ require_once("/../model/database.php");
 	}
 
 	$query = $connection->query("CREATE TABLE posts ("
-		. "id ");
+		. "id int (11) NOT NULL AUTO_INCREMENT," . "title varchar(255)
+		NOT NULL," . "post text NOT NULL," . "PRIMARY KEY (id)");
 
 	// closes $connection
 	$connection->close();
