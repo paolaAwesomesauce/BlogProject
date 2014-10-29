@@ -1,7 +1,7 @@
 <?php
 
 //Looks for database.php
-require_once("/../model/database.php");
+require_once(__DIR__ . "/../model/database.php");
 
 	//connects our host,ud]sername, and password to mysqli
 	$connection = new mysqli($host, $username, $password);
@@ -28,7 +28,7 @@ require_once("/../model/database.php");
 		}
 	}
 	else{
-		echo "<p> Database has already exsits </p>";
+		echo "<p> Database already exsits </p>";
 	}
 
 	//Creates datatable for posts that have a unique id. Ouur post are text and none of them can be null.
@@ -36,8 +36,9 @@ require_once("/../model/database.php");
 		. "id int(11) NOT NULL AUTO_INCREMENT," 
 		. "title varchar(255) NOT NULL," 
 		. "post text NOT NULL," 
-		. "PRIMARY KEY (id)");
+		. "PRIMARY KEY (id))");
 
+	//Creates table name posts and checks if theres an error in your connection.
 	if($query){
 		echo "<p>Successfully created table : posts</p>";
 	}
