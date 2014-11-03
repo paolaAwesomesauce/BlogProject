@@ -1,5 +1,5 @@
 <?php
-	//variable gives path for navigation.php to follow
+	//variable gives path for Blog project
 	$path = "/BlogProject/";
 
 
