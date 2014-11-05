@@ -13,3 +13,21 @@ body{
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 786px){
+	body{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+	label{
+		width: 50%;
+	}
+	input{
+		width: 50%
+	}
+	textarea{
+		width: 50%;
+	}
+}
