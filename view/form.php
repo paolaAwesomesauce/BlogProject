@@ -12,4 +12,9 @@
 		<label for="post">Post: </label>
 		<textarea name="post"></textarea>
 	</div>
+
+	<!-- Makes a submit button for our blog posts -->
+	<div>
+		<button type="submit">Submit</button>
+	</div>
 </form>

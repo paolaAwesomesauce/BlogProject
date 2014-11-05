@@ -3,3 +3,13 @@ body{
 	margin-top: 20px;
 	margin-left: 20px;
 }
+
+/*Media thingy for iphone*/
+@media screen and (max-width: 320px){
+	body{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+}
