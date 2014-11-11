@@ -1,6 +1,12 @@
+<?php
+	//helps us reach certain files with minimal work
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
 <h1>Create Blog Posts<h1>
 
-<form>
+<!-- sends information to post and echos the path for the information to follow -->
+<form method="post" action="<?php echo $path . "controller/create-post.php";?>">
 <!-- Creates div and label for title and a text input for title -->
 	<div>
 		<label for="title"> Title: </label>
