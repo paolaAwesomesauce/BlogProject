@@ -11,11 +11,8 @@
 	//varible filter the input, gets the posts from post and filters it to make sure its a string 
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
-	//echos the variable title
-	echo "<p>Title: $title</p>";
-
-	//echos the variable post
-	echo "<p>Post: $post</p>";
+	//query sends the information stores in $title and $post
+	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	//closes connection
 	$connection->close();
