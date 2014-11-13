@@ -1,7 +1,7 @@
 <?php
 
-//Looks for database.php
-require_once(__DIR__ . "/../model/database.php");
+//Looks for config.php where we refactored the code
+require_once(__DIR__ . "/../model/config.php");
 
 	//connects our host,ud]sername, and password to mysqli
 	$connection = new mysqli($host, $username, $password);

@@ -1,6 +1,6 @@
 <?php
-	//looks for database.php
-	require_once(__DIR__ . "/../model/database.php");
+	//looks for config.php where we refactored our code
+	require_once(__DIR__ . "/../model/config.php");
 
 	//establishes connection to dattabase
 	$connection = new mysqli($host, $username, $password, $database);
