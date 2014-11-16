@@ -28,7 +28,7 @@
 		public function closeConnection(){
 
 		}
-// after you call object you can and be able to call specificlly on the functions above. won't have to constanly repeat ourselves
+// after you call object you can and be able to specificlly call on the functions above. won't have to constanly repeat ourselves
 		public function query($string){
 
 		}
