@@ -22,6 +22,17 @@
 //function opens connection
 		public function openConnection(){
 
+//connects our host,username, and password to mysqli
+			$this->connection = new mysqli($this->host, $this->username,$this->database);
+
+//if/else statemant to check if we have a connection error
+			if($this->connection->connect_error){
+				die("<p>Error: " . $this->connection->connect_error . "</p>");
+			}
+
+			else{
+				echo "<p>Success: " . $connection->host_info . "</p>";
+			}
 		}
 
 //function closes connection
