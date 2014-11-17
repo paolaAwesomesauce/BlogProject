@@ -20,6 +20,7 @@
 		}
 
 //function opens connection
+//A function is a block of statements that can be used repeatedly in a program;will not execute immediately when a page loads;will be executed by a call to the function.
 		public function openConnection(){
 
 //connects our host,username, and password to mysqli
@@ -37,7 +38,11 @@
 
 //function closes connection
 		public function closeConnection(){
-
+//to check weather or not we open the connection and then ti be able to close the connection
+//isset makes sure there is info present in the variable;going to return true if there is info if variable doesnt have info there is no need to call the $this->conection->close();
+			if(isset($this->connection)){
+				$this->connection->close();
+			}
 		}
 // after you call object you can and be able to specificlly call on the functions above. won't have to constanly repeat ourselves
 		public function query($string){
