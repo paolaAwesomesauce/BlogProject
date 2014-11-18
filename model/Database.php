@@ -1,7 +1,6 @@
 <?php
 // we are using a class so we wont be repeating the same code over and over again and so it will be easier to read the code.
-// class are a collection of variables and fucntions
-//makes database as an object
+// class are a collection of variables and fucntions;makes database an object
 	class Database{
 		//variables that can only be seen in this file.
 		private $connection;
@@ -38,7 +37,7 @@
 
 //function closes connection
 		public function closeConnection(){
-//to check weather or not we open the connection and then ti be able to close the connection
+//checks if do we or dont open the connection and then it will be able to close the connection
 //isset makes sure there is info present in the variable;going to return true if there is info if variable doesnt have info there is no need to call the $this->conection->close();
 			if(isset($this->connection)){
 				$this->connection->close();
