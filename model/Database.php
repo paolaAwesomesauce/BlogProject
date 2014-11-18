@@ -46,7 +46,17 @@
 		}
 // after you call object you can and be able to specificlly call on the functions above. won't have to constanly repeat ourselves
 		public function query($string){
+//opens connection
+			$this->openConnection();
 
+//executes query on database and sends commands through the $string variable
+			$query = $this->connection->query($string);
+
+//closes connection
+			$this->closeConnection();
+
+//returns varible query as either true or false.
+			return $query;
 		}
 	}
 
