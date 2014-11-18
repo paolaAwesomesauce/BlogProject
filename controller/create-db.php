@@ -3,9 +3,9 @@
 //Looks for config.php where we refactored the code
 require_once(__DIR__ . "/../model/config.php");
 
-	//connects our host,ud]sername, and password to mysqli
-	$connection = new mysqli($host, $username, $password);
+	//connects our host,username, and password to mysqli
 
+	$connection = new mysqli($host, $username, $password);
 	//if/else statemant to check if we have a connection error
 	if($connection->connect_error){
 		die("<p>Error: " . $connection->connect_error . "</p>");

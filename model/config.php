@@ -12,6 +12,9 @@
 	//Name of our database
 	$database = "bolg_db";
 
+//new database object that helps the query on database 
+	$connection = new Database($host, $username, $password, $database);
+
 
 
 ?>
