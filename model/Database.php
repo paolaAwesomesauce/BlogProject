@@ -34,7 +34,7 @@
 		}
 
 		//checks if slect_db exsits
-		$exsits= $connection->select_db($database);
+		$exsits= $this->connection->select_db($database);
 
 		//creates $database for my admin and checks if we have created it 
 		if(!$exsits){
