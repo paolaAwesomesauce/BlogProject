@@ -84,6 +84,7 @@
 			//executes query on database and sends commands through the $string variable
 			$query = $this->connection->query($string);
 
+			//checks if there is an error in our connection
 			if (!$query) {
 				$this->error = $this->connection->error;
 			}
