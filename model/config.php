@@ -1,4 +1,7 @@
 <?php
+	
+	require_once(__DIR__ . "/database.php");
+
 	//variable stores path for Blog project
 	$path = "/BlogProject/";
 
@@ -12,7 +15,7 @@
 	//Name of our database
 	$database = "bolg_db";
 
-//new database object that helps the query on database 
+	//new database object that helps the query on database 
 	$connection = new Database($host, $username, $password, $database);
 
 
