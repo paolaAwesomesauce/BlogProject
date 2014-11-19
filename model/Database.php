@@ -55,7 +55,7 @@
 		//A function is a block of statements that can be used repeatedly in a program;will not execute immediately when a page loads;will be executed by a call to the function.
 		public function openConnection(){
 			//connects our host,username, and password to mysqli
-			$this->connection = new mysqli($this->host, $this->username,$this->database);
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 			//if/else statemant to check if we have a connection error
 			if($this->connection->connect_error){
@@ -63,7 +63,7 @@
 			}
 
 			else{
-				echo "<p>Success: " . $connection->host_info . "</p>";
+				echo "<p>Success: " . $this->connection->host_info . "</p>";
 			}
 		}
 
