@@ -1,7 +1,8 @@
 body{
-	background-color: pink;
+	background-image: url('http://www.envelopments.com/assets/product_color/image_large/4e98b645960a564aaf0000a4/platinum-large.jpg');
 	margin-top: 20px;
 	margin-left: 20px;
+	font-family: 'Raleway', sans-serif;
 }
 
 /*Media thingy for iphone*/

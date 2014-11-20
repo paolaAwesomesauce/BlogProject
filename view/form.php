@@ -21,6 +21,6 @@
 
 	<!-- Makes a submit button for our blog posts -->
 	<div>
-		<button type="submit" class="btn btn-success btn-lg">Submit</button>
+		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
 	</div>
 </form>

@@ -2,6 +2,9 @@
 	
 	require_once(__DIR__ . "/database.php");
 
+	//starts our session
+	session_start();
+
 	//variable stores path for Blog project
 	$path = "/BlogProject/";
 
@@ -15,8 +18,14 @@
 	//Name of our database
 	$database = "bolg_db";
 
-	//new database object that helps the query on database 
-	$connection = new Database($host, $username, $password, $database);
+	//isset checks if $_SESSION has the $connection stored in it
+	if(!isset($_SESSION("connection"))){
+		//new database object that helps the query on database 
+		$connection = new Database($host, $username, $password, $database);
+
+		//stores varible connection in the variable session.
+		$_SESSION["connection"] = $connection;
+	}
 
 
 
