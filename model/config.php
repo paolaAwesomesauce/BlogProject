@@ -18,7 +18,7 @@
 	//Name of our database
 	$database = "bolg_db";
 
-	//isset checks if $_SESSION has the $connection stored in it
+	//isset checks if $_SESSION has the $connection stored in it; only creates database once 
 	if(!isset($_SESSION("connection"))){
 		//new database object that helps the query on database 
 		$connection = new Database($host, $username, $password, $database);

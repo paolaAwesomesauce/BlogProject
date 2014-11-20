@@ -14,16 +14,16 @@
 	$date = new DateTime('today');
 
 	//query sends the information stores in $title and $post. Either true or not true
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post', DateTime='$date");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post', DateTime='$date");
 
-	//checks weather the query is true or not 
+	//checks weather the query is true or not using sessins variables  
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
 		echo "<p>$date->format('m/d/y')</p>";
 
 	}
 	else{
-		echo "<p>$connection->error</p>";
+		echo "<p> . $_SESSION["connection"]->error . </p>";
 	}
 
 
