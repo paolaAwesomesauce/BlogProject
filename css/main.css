@@ -24,24 +24,34 @@ textarea{
 	form{
 		width: 100%;
 	}
+	input{
+		width:50%;
+	}
+	textarea{ 
+	  width: 160px; 
+	  min-width:160px; 
+	  max-width:160px; 
+
+	  height:85px; 
+	  min-height:85px;  
+	  max-height:85px;
+	}
+
 }
 
 /*media thingy for ipad*/
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 400px) and (max-width: 1024px){
 	body{
 		width: 100%;
 		background-color: lime;
 	}
-	form{
-		width: 100%;
-	}
-	label{
-		width: 50%;
-	}
-	input{
-		width: 50%
-	}
 	textarea{
-		width: 50%;
+	  width: 394px; 
+	  min-width:394px; 
+	  max-width:394px; 
+
+	  height:85px; 
+	  min-height:85px;  
+	  max-height:85px;
 	}
 }
