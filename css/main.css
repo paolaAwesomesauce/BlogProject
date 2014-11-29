@@ -5,6 +5,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
+/*fixed hieght and width for textarea */
 textarea{ 
   width: 394px; 
   min-width:394px; 
