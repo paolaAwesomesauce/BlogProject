@@ -14,7 +14,8 @@
 	//query sends the information stores in $title and $post. Either true or not true
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
-	//checks weather the query is true or not using sessins variables  
+	//checks weather the query is true or not using sessins variables
+	//echo date and time when you post a post  
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
 		echo date('l jS \of F Y h:i:s A');
