@@ -22,7 +22,7 @@
 
 		//connects our host,username, and password to mysqli
 		//changed $connection to $this->connection
-		$this->connection = new mysqli($host, $username, $password);
+		$this->connection = new mysqli($host, $username, $password, $date);
 
 		//if/else statemant to check if we have a connection error
 		if($this->connection->connect_error){

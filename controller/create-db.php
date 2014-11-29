@@ -15,6 +15,6 @@ require_once(__DIR__ . "/../model/config.php");
 		echo "<p>Successfully created table : posts</p>";
 	}
 	else {
-		echo "<p> . $_SESSION["connection"]->error . </p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 ?>

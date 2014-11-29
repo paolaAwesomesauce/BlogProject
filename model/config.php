@@ -1,6 +1,6 @@
 <?php
 	
-	require_once(__DIR__ . "/database.php");
+	require_once(__DIR__ . "/../model/Database.php");
 
 	//starts our session
 	session_start();
@@ -16,10 +16,10 @@
 	//my admin password
 	$password = "root";
 	//Name of our database
-	$database = "bolg_db";
+	$database = "blog_db";
 
 	//isset checks if $_SESSION has the $connection stored in it; only creates database once 
-	if(!isset($_SESSION("connection"))){
+	if(!isset($_SESSION["connection"])){
 		//new database object that helps the query on database 
 		$connection = new Database($host, $username, $password, $database);
 

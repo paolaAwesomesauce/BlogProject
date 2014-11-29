@@ -11,19 +11,17 @@
 	//varible filter the input, gets the posts from post and filters it to make sure its a string 
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
-	$date = new DateTime('today');
-
 	//query sends the information stores in $title and $post. Either true or not true
-	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post', DateTime='$date");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	//checks weather the query is true or not using sessins variables  
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
-		echo "<p>$date->format('m/d/y')</p>";
+		echo date('l jS \of F Y h:i:s A');
 
 	}
 	else{
-		echo "<p> . $_SESSION["connection"]->error . </p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
 
