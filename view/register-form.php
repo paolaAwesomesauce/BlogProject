@@ -12,7 +12,7 @@
 		<input type="text" name="username" />
 	</div>
 
-<!-- label for user to input their password; passwrod appears as dots not as text -->
+<!-- label for user to input their password; password appears as dots not as text -->
 	<div>
 		<label for="password">Password: </label>
 		<input type="password" name="password" />

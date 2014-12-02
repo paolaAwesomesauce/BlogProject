@@ -16,6 +16,11 @@ textarea{
   max-height:85px;
 }
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
 /*Media thingy for iphone*/
 @media screen and (max-width: 320px){
 	body{
