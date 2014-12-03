@@ -1,5 +1,12 @@
+<?php
+	//helps us reach certain files with minimal work
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
+<h1>Register</h1>
+
 <!-- Form created so user can register so they can be able to post, posts -->
-<form>
+<form method="post" action="<?php echo $path . "controller/create-user.php";?>">
 <!--label for user to resgister their email -->
 	<div>
 		<label for="email">Email: </label>
