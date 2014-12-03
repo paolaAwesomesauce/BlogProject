@@ -3,9 +3,11 @@
 	require_once(__DIR__ . "/../model/config.php");
 ?>
 
+<!-- creates header for page -->
 <h1>Register</h1>
 
 <!-- Form created so user can register so they can be able to post, posts -->
+<!-- method send the info in form to our database; action creates the path to follow to get to create user -->
 <form method="post" action="<?php echo $path . "controller/create-user.php";?>">
 <!--label for user to resgister their email -->
 	<div>
