@@ -24,7 +24,7 @@
 	//echos date and time on our post form   
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
-		echo "Posted on: " . $date->format("M/D/Y") . " at " . $time->format("gil");
+		echo "Posted on: " . $date->format("M/D/Y") . " at " . $time->format("g:i");
 
 	}
 	else{
