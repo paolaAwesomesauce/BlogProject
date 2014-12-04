@@ -7,7 +7,8 @@ require_once(__DIR__ . "/../model/config.php");
 	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 		. "id int(11) NOT NULL AUTO_INCREMENT," 
 		. "title varchar(255) NOT NULL," 
-		. "post text NOT NULL," 
+		. "post text NOT NULL,"
+		. "DateTime datetime NOT NULL ," 
 		. "PRIMARY KEY (id))");
 
 	//Creates table name posts and checks if theres an error in your connection;
