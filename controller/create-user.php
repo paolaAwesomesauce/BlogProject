@@ -16,13 +16,14 @@
 	//encrypts password for us
 	$hashedPassword = crypt($password, $salt);
 
-	
+	//query sends email, username, and encrypted password to database
 	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
 		. "email = '$email',"
 		. "username = '$username',"
 		. "password = '$hashedPassword',"
 		. "salt = '$salt'");
 
+	//if/else statement checks if created user or nah
 	if ($query) {
 		echo "Successfully created user: $username";
 	}
