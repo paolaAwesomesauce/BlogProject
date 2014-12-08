@@ -11,5 +11,6 @@
 	//Looks for footer.php
 	require_once(__DIR__ . "/view/footer.php");
 
+	//looks for read-posts.php
 	require_once(__DIR__ . "/controller/read-posts.php");
 ?>
