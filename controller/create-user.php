@@ -11,5 +11,10 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
 	//echo our email username and password
-	echo $email . " - " . $username . " - " . $password;
+	echo $password;
+
+//creates unique id for your user
+	$salt = "$5$" . "rounds=5000$" . uniqid()mt_rand(), true . "$";
+
+	echo $salt;
 ?>
