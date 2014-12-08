@@ -10,11 +10,27 @@
 	//inputs password to database
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	//echo our email username and password
-	echo $password;
-
-//creates unique id for your user
+	//creates unique id for your user
 	$salt = "$5$" . "rounds=5000$" . uniqid()mt_rand(), true . "$";
 
-	echo $salt;
+	//encrypts password for us
+	$hashedPassword = crypt($password, $salt);
+
+	
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+		. "email = '$email',"
+		. "username = '$username',"
+		. "password = '$hashedPassword',"
+		. "salt = '$salt'");
+
+	if ($query) {
+		echo "Successfully created user: $username";
+	}
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
+
+
+
+
 ?>
