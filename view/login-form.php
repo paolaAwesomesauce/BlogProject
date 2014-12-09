@@ -4,9 +4,9 @@
 ?>
 
 <h1>Login</h1>
-
+<!-- form created so already created user can login -->
 <form method="post" action="<?php echo $path . "controller/login-user.php";?>">
-	<!-- label for user to register there user name  -->
+	<!-- label for user to insertmthere username  -->
 	<div>
 		<label for="username">Username: </label>
 		<input type="text" name="username" />
