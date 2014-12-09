@@ -8,3 +8,20 @@
 
 	//selects our salt password for our users tabkle where our user login 
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
+
+	//gets info and stores it to  $row;
+	//checks if password type is the same as password in database
+	//if password doesnt match wont let user login
+	if($query->num_rows == 1) {
+		$row = $query->fetch_array();
+
+		if($row["password"] === crypt($password, $row["salt"])) {
+			echo "<p> Login Successful!</p>";
+		}
+		else{
+			echo "<p> Invalid username and password</p>";
+		}
+	}
+	else{
+		echo "<p> Invalid username and password</p>";
+	}
