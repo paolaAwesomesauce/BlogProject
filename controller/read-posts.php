@@ -9,11 +9,11 @@
 
 	//div 'posts' hold our posts on our index page
 	if($result){
-		while ($row = mysqli_fetch_array($result) {
+		while ($row = mysqli_fetch_array($result)) {
 			echo "<div class='posts'";
 			echo "<h2>" . $row['title'] . "</h2>";
 			echo "<br / >";
-			echo "<p>" . $row['posts'] . "</h1>";
+			echo "<p>" . $row['post'] . "</h1>";
 			echo "<br />";
 			echo "</div>";
 		}
