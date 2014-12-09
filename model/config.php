@@ -4,6 +4,7 @@
 
 	//starts our session
 	session_start();
+	session_regenerate_id(true);
 
 	//variable stores path for Blog project
 	$path = "/BlogProject/";
