@@ -23,7 +23,7 @@
 	//checks weather the query is true or not using sessins variables
 	//echos date and time on our post form   
 	if($query){
-		//echo "<p>Successfully inserted post: $title</p>";
+		echo "<p>Successfully inserted post: $title</p>";
 		echo "Posted on: " . $date->format("M/D/Y") . " at " . $time->format("g:i");
 
 	}

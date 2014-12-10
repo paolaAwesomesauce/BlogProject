@@ -12,4 +12,4 @@
 	<h1>Blog</h1>
 	<nav> 
 		<a href="login.php">Login</a>
-		<a href="register.php">Register</a>
+		<a href="register.php"><br>Register</a>

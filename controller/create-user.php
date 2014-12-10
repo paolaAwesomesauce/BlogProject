@@ -11,7 +11,7 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
 	//creates unique id for your user
-	$salt = "$5$" . "rounds=5000$" . uniqid()mt_rand(), true . "$";
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
 	//encrypts password for us
 	$hashedPassword = crypt($password, $salt);
@@ -25,7 +25,7 @@
 
 	//if/else statement checks if created user or nah
 	if ($query) {
-		//echo "Successfully created user: $username";
+		echo "Successfully created user: $username";
 	}
 	else{
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
