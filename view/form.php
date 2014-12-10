@@ -4,6 +4,7 @@
 
 	require_once(__DIR__ . "/../controller/login-varify.php");
 
+	//checks if users are login and if not redirects or kills program
 	if (!authenticateUser()) {
 		header("Location: " . $path . "index.php");
 		die();
