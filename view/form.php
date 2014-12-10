@@ -1,6 +1,13 @@
 <?php
 	//helps us reach certain files with minimal work
 	require_once(__DIR__ . "/../model/config.php");
+
+	require_once(__DIR__ . "/../controller/login-varify.php");
+
+	if (!authenticateUser()) {
+		header("Location: " . $path . "index.php");
+		die();
+	}
 ?>
 
 <h1>Create Blog Posts<h1>
