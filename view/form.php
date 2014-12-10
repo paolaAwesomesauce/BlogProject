@@ -1,4 +1,4 @@
-<?php
+	<?php
 	//helps us reach certain files with minimal work
 	require_once(__DIR__ . "/../model/config.php");
 
