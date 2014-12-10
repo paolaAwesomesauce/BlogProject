@@ -12,8 +12,9 @@
 ?>
 
 <!-- creates the link for post.php -->
-<nav>
+
 	<ul>
 		<a href="<?php echo $path . "post.php"; ?>">Blog Post Form</a>
 	</ul>
 </nav>
+</header>

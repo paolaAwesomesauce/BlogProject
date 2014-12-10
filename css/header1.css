@@ -1,0 +1,18 @@
+body{
+	background-image: url("http://subtlepatterns.com/patterns/swirl_pattern.png");
+	font-family: 'Raleway', sans-serif;
+	margin-left: 50px;
+}
+#email{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#username{
+	margin-bottom: 10px;
+}
+
+
+#button{
+	margin-top: 10px;
+}

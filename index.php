@@ -2,7 +2,7 @@
 	require_once(__DIR__ . "/controller/login-varify.php");
 
 	//looks for header.php
-	require_once(__DIR__ . "/view/header.php");
+	require_once(__DIR__ . "/view/IHeader.php");
 
 	//if user is authenticated shows navigation
 	if (authenticateUser()) {

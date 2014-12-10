@@ -30,7 +30,7 @@
 		}
 
 		else{
-			echo "<p>Success: " . $this->connection->host_info . "</p>";
+			//echo "<p>Success: " . $this->connection->host_info . "</p>";
 		}
 
 		//checks if slect_db exsits
@@ -41,7 +41,7 @@
 			$query = $this->connection->query("CREATE DATABASE $database");
 
 			if($query){
-				echo "<p>Successfully created database: " . $database . "</p>";
+				//echo "<p>Successfully created database: " . $database . "</p>";
 
 			}
 		}
@@ -63,7 +63,7 @@
 			}
 
 			else{
-				echo "<p>Success: " . $this->connection->host_info . "</p>";
+				//echo "<p>Success: " . $this->connection->host_info . "</p>";
 			}
 		}
 

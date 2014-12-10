@@ -1,8 +1,7 @@
 body{
-	background-image: url('http://www.envelopments.com/assets/product_color/image_large/4e98b645960a564aaf0000a4/platinum-large.jpg');
-	margin-top: 20px;
-	margin-left: 20px;
+	background-image: url("http://subtlepatterns.com/patterns/swirl_pattern.png");
 	font-family: 'Raleway', sans-serif;
+	margin-left: 50px;
 }
 
 /*fixed hieght and width for textarea */
@@ -14,11 +13,6 @@ textarea{
   height:85px; 
   min-height:85px;  
   max-height:85px;
-}
-
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
 }
 
 /*Media thingy for iphone*/
