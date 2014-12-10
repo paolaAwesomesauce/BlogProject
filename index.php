@@ -1,9 +1,15 @@
 <?php
+	require_once(__DIR__ . "/controller/login-varify.php");
+
 	//looks for header.php
 	require_once(__DIR__ . "/view/header.php");
 
-	//Looks for navigation.php
-	require_once(__DIR__ . "/view/navigation.php");
+	//if user is authenticated shows navigation
+	if (authenticateUser()) {
+
+		//Looks for navigation.php
+		require_once(__DIR__ . "/view/navigation.php");
+	}
 	
 	//Creates Database
 	require_once(__DIR__ . "/controller/create-db.php");
