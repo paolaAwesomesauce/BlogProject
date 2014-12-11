@@ -70,7 +70,24 @@ body.sticky-header{
 	}
 }
 
-.posts{
-	margin-left: 20px;
-	float: left;
+#posts{
+	width: 70%;
+    height: 100%;
+    margin-right:10px;
+    float:left;
+   	padding-left: 30px;
+   	padding-right: 200px;
+   	display:inline-block;
+}
+
+
+#aboutMe{
+	float: right;
+    padding-right: 200px;
+    display:inline-block;
+}
+
+.img-circle{
+	height: 250px;
+	
 }

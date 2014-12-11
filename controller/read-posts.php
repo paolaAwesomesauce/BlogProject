@@ -1,3 +1,5 @@
+
+<div id="posts">
 <?php
 	require_once(__DIR__ . "/../model/config.php");
 
@@ -20,3 +22,11 @@
 	}
 
 ?>
+</div>
+
+
+<div id="aboutMe">
+	<img src="pic1.jpg" alt="..." class="img-circle">
+	
+
+</div>
