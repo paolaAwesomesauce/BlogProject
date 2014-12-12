@@ -14,8 +14,6 @@
 
 <!-- creates the link for post.php -->
 
-	<ul>
-		<a href="<?php echo $path . "post.php"; ?>">Post</a>
-	</ul>
+		<a href="<?php echo $path . "post.php"; ?>"><br>Make a Post</a>
 </nav>
 </header>
