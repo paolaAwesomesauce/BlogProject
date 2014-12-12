@@ -24,7 +24,7 @@
 ?>
 </div>
 
-
+<!-- div hold image on index page -->
 <div id="aboutMe">
 	<img src="pic1.jpg" alt="..." class="img-circle">
 	

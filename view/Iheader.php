@@ -8,6 +8,7 @@
 	<title>Blog Project</title>
 </head>
 <body>
+<!-- header for index page  -->
 <header>
 	<h1>Blog</h1>
 	<nav> 

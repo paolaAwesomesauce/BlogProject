@@ -8,3 +8,4 @@
 	<title>Blog Project</title>
 </head>
 <body>
+<!-- Header is linked to ligin, register and blog post -->
