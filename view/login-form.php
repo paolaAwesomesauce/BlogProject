@@ -20,7 +20,7 @@
 
 	<!-- button to submit the info  -->
 	<div id="button">
-		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+		<button type="submit" class="btn btn-success">Submit</button>
 	</div>
 
 </form>

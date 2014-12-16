@@ -12,6 +12,6 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id= "links">
   <div class="container">
     <a href="index.php">Home</a>
-	<a href="register.php"><br>Register</a>
+	<a href="login.php"><br>Login</a>
   </div>
 </nav>
