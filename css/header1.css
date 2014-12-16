@@ -20,3 +20,14 @@ body{
 #button{
 	margin-top: 10px;
 }
+
+/*styling for element with class readmore-js-toggle and readmore-js-section*/
+.readmore-js-toggle, .readmore-js-section {
+  display: block;
+  width: 100%;
+  color: black;
+}
+.readmore-js-section {
+  overflow: hidden;
+  color: black;
+}

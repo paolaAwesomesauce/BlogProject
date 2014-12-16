@@ -102,8 +102,21 @@ body.sticky-header{
 	display:inline-block;
 	float: right;
 	width: 40%;
-	height: 100%
-    padding-right: 20px;
+	height: 100%;
+    padding-right: 50px;
+    padding-left: 100px;
+    text-align: center;
+    border-left-style: solid;
+    border-width: 5px;
+
+}
+
+#div2{
+	display:inline-block;
+	float: right;
+	width: 40%;
+	height: 100%;
+    padding-right: 50px;
     padding-left: 100px;
     text-align: center;
     border-left-style: solid;
@@ -120,9 +133,15 @@ body.sticky-header{
 .readmore-js-toggle, .readmore-js-section {
   display: block;
   width: 100%;
+  color: black;
 }
-
-/*styling for element with class readmore-js-section*/
 .readmore-js-section {
   overflow: hidden;
+  color: black;
+}
+
+#foot{
+	float: right;
+	padding-top: 550px;
+	padding-bottom: 10px;
 }
