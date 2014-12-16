@@ -9,3 +9,8 @@
 </head>
 <body>
 <!-- header for blog post form -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id= "links">
+  <div class="container">
+    <a href="index.php">Home</a>
+  </div>
+</nav>

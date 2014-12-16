@@ -11,7 +11,7 @@
 	}
 ?>
 
-<h1>Create Blog Posts<h1>
+<h1>Create Blog Post<h1>
 
 <!-- sends information to post and echos the path for the information to follow -->
 <form method="post" action="<?php echo $path . "controller/create-post.php";?>">
@@ -29,6 +29,6 @@
 
 	<!-- Makes a submit button for our blog posts -->
 	<div>
-		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+		<button type="submit" class="btn btn-success">Submit</button>
 	</div>
 </form>
